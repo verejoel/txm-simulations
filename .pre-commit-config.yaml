@@ -1,0 +1,26 @@
+---
+repos:
+  - repo: local
+    hooks:
+      - id: flake8
+        name: flake8
+        entry: flake8
+        language: system
+        types: [python]
+        exclude: &py-excludes >
+          (?x)^(
+              .*/example1.py/.*|
+              .*/example2.py
+          )$
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        exclude: *py-excludes
+      - id: mypy
+        name: mypy
+        entry: mypy
+        language: system
+        types: [python]
+        exclude: *py-excludes

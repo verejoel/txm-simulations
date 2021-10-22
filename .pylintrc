@@ -1,0 +1,9 @@
+[MASTER]
+ignore=__init__.py,
+
+[MESSAGES CONTROL]
+# This list is automatically generated on YYYY-MM-DD by the command
+# pylint . | egrep '\([a-z-]+\)$' | sed 's/.*(\([^)]\+\))$/\1/g' | sort | uniq
+#
+# 1) Start fixing code and remove entries from this list one-by-one
+# disable=import-outside-toplevel,
